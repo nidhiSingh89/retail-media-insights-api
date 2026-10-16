@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: campaign-insights-api
+server:
+  port: 8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+insights:
+  sample-data: true   # load synthetic demo data on startup
